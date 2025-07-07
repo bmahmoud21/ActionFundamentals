@@ -24,7 +24,9 @@ jobs:
         run: echo "Event name ${{ github.event_name }}"
 
       - name: Output the current branch name
-        run: echo "Branch name ${{ github.ref_name }}"
+        run: echo "Branch name ${{ github.ref }}"
 
-      - name: List all files in the repository
-        run: ls -R
+      - name: List files in the repository
+        run: |
+          echo "The repository ${{ github.repository }} contains the following files:"
+          tree
