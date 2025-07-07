@@ -70,3 +70,4 @@ Find common terminology for reference [here](./CheatSheet.md)
 
 -modify and commit
 -modify and add [skip ci]
+-modify and create pull request
